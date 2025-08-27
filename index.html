@@ -18,14 +18,14 @@
           </h4>
         </div>
 
-        <div class="flex gap-3 sm:gap-5 md:gap-8 lg:gap-10">
+        <div class="flex gap-3 max-sm:flex-col  md:gap-8 lg:gap-10">
           <div class="flex gap-2 items-center bg-[#edfff1] px-6 md:px-8 py-1 sm:py-2 rounded-full justify-center">
-            <span class="text-sm md:text-[16px]">0</span>
-            <img src="./assets/heart.png" alt="" class="w-5 sm:w-6" />
+            <h5><span id="heartCount" class="text-sm md:text-[16px]">0</span></h5>
+            <img src="./assets/heart.png" alt="" class="w-5 sm:w-10" />
           </div>
 
           <div class="flex gap-2 items-center bg-[#edfff1] px-4 sm:px-5 md:px-6 py-1 sm:py-2 rounded-full justify-center">
-            <span class="text-sm md:text-[16px]">100</span>
+            <h5><span id="coin" class="text-sm md:text-[16px]">100</span></h5>
             <img src="./assets/coin.png" alt="" class="w-5 sm:w-6" />
           </div>
 
@@ -52,7 +52,9 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-lg">
                   <img src="./assets/emergency.png" alt="" class="w-6" />
                 </div>
-                <i class="bx bx-heart"></i>
+                
+                  <i class="bx bx-heart text-3xl heart"></i>
+               
               </div>
               <div>
                 <h2 class="font-bold text-[24px]">জাতীয় জরুরি সেবা</h2>
@@ -67,7 +69,7 @@
                   <i class="bx bx-copy"></i>
                   <button>Copy</button>
                 </div>
-                <div class="bg-[#00a63e] text-white w-1/2 text-center p-[2px] rounded-md hover:bg-[#19c558fb]">
+                <div id="callbtn" class="bg-[#00a63e] text-white w-1/2 text-center p-[2px] rounded-md hover:bg-[#19c558fb]">
                   <i class="bx bx-phone"></i>
                   <button>Call</button>
                 </div>
@@ -79,7 +81,7 @@
                 <div class="bg-[#dfefff] p-2 rounded-lg">
                   <img src="./assets/police.png" alt="" class="w-6" />
                 </div>
-                <i class="bx bx-heart"></i>
+                <i class="bx bx-heart text-3xl heart"></i>
               </div>
               <div>
                 <h2 class="font-bold text-[24px]">পুলিশ</h2>
@@ -108,7 +110,7 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-lg">
                   <img src="./assets/fire-service.png" alt="" class="w-6" />
                 </div>
-                <i class="bx bx-heart"></i>
+                <i class="bx bx-heart text-3xl heart"></i>
               </div>
               <div>
                 <h2 class="font-bold text-[24px]">ফায়ার সার্ভিস</h2>
@@ -137,7 +139,7 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-lg">
                   <img src="./assets/ambulance.png" alt="" class="w-6" />
                 </div>
-                <i class="bx bx-heart"></i>
+                <i class="bx bx-heart text-3xl heart"></i>
               </div>
               <div>
                 <h2 class="font-bold text-[24px]">অ্যাম্বুলেন্স</h2>
@@ -167,7 +169,7 @@
                   <img src="./assets/emergency.png" alt="" class="w-6" />
                 </div>
 
-                <i class="bx bx-heart"></i>
+                <i class="bx bx-heart text-3xl heart"></i>
               </div>
               <div>
                 <h2 class="font-bold text-[24px]">নারী ও শিশু সহায়তা</h2>
@@ -196,7 +198,7 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-lg">
                   <img src="./assets/emergency.png" alt="" class="w-6" />
                 </div>
-                <i class="bx bx-heart"></i>
+                <i class="bx bx-heart text-3xl heart"></i>
               </div>
               <div>
                 <h2 class="font-bold text-[24px]">দুদক</h2>
@@ -225,7 +227,7 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-lg">
                   <img src="./assets/emergency.png" alt="" class="w-6" />
                 </div>
-                <i class="bx bx-heart"></i>
+                <i class="bx bx-heart text-3xl heart"></i>
               </div>
               <div>
                 <h2 class="font-bold text-[24px]">বিদ্যুৎ বিভ্রাট</h2>
@@ -254,7 +256,7 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-lg">
                   <img src="./assets/emergency.png" alt="" class="w-6" />
                 </div>
-                <i class="bx bx-heart"></i>
+                <i class="bx bx-heart text-3xl heart"></i>
               </div>
               <div>
                 <h2 class="font-bold text-[24px]">ব্র্যাক</h2>
@@ -283,7 +285,7 @@
                 <div class="bg-[#ffe3e2] p-2 rounded-lg">
                   <img src="./assets/emergency.png" alt="" class="w-6" />
                 </div>
-                <i class="bx bx-heart"></i>
+                <i class="bx bx-heart text-3xl heart"></i>
               </div>
               <div>
                 <h2 class="font-bold text-[24px]">বাংলাদেশ রেলওয়ে</h2>
@@ -307,7 +309,22 @@
               </div>
             </div>
           </div>
-          <div class="historylist md:col-span-1 bg-green-200 p-4">History List Content</div>
+          <div class="historylist md:col-span-1 bg-white shadow rounded-md p-4">
+            <div>
+              <div class="flex justify-between"> 
+                <div class="flex gap-3 items-center">
+                   <i class='bx bx-time text-[17px]'></i>
+                  <h2 class="font-semibold">Call History</h2>
+
+                </div>
+                <button class="bg-[#00a63e] text-white text-center px-6 py-1  rounded-full font-bold hover:bg-[#19c558fb]">Clear</button>
+              </div>
+              <div>
+
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </main>

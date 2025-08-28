@@ -20,7 +20,6 @@ for (const btn of copybtn) {
   btn.addEventListener('click', () => {
     
     const numbers = btn.parentNode.parentNode.children[2].children[0].innerText;
-
     const copyCounts = document.getElementById('copyCount')
     copyCount++;
     copyCounts.innerText = copyCount
@@ -29,9 +28,14 @@ for (const btn of copybtn) {
 
     alert(`📋 নম্বর কপি হয়েছে: ${numbers}`);
     
- 
+   navigator.clipboard.writeText(numbers)
   });
+ 
 }
+
+
+
+
 //coin
 const coin = document.getElementById('coin')
 const callbtn = document.getElementsByClassName('callbtn')

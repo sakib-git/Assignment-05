@@ -30,4 +30,4 @@ Event Bubbling => child -> parent -> body - html
 
 5.
 preventDefault() => event er default behavior off kora dey
-stopPropagation() => stopPropagation() jekhane deya hok oi jaigai stop hoye jai;
+stopPropagation() => stopPropagation() jekhane deya hoy oi jaigai stop hoye jai;

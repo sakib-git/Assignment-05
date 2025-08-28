@@ -72,7 +72,7 @@ for(const call of callbtn){
              </div>
    
    `
-   historyContainer.append(newCart)
+   historyContainer.prepend(newCart)
 
 
 

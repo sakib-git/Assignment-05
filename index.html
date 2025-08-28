@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <title>Joruri Seba</title>
+    <title>Assignment-05</title>
   </head>
   <body>
     <main>
-      <header class="max-w-[1900px] bg-white mx-auto flex justify-between items-center px-1 md:p-4 py-3">
+      <header class="max-w-[1700px] bg-white mx-auto flex justify-between items-center px-1 md:p-4 py-3">
         <div class="w-full flex gap-2 items-center">
           <img src="./assets/logo.png" alt="" class="w-15 sm:w-10 md:w-12" />
           <h4 class=" text-2xl sm:text-[17px] font-bold text-[#006747] sm:text-lg md:text-xl leading-tight">
@@ -37,7 +37,7 @@
       </header>
 
       <div class="banner bg-gradient-to-r to-[#013223] from-[#006747]">
-        <div class="max-w-[1900px] flex flex-col justify-center items-center gap-6 py-5 text-white mx-auto px-2 md:px-0">
+        <div class="max-w-[1700px] flex flex-col justify-center items-center gap-6 py-5 text-white mx-auto px-2 md:px-0">
           <img src="./assets/logo.png" alt="" class="w-[92px] h-[92px]" />
           <h1 class="text-[clamp(1.2rem,0.7273rem+1.8909vw,2.5rem)] font-semibold">জরুরি সেবা ডিরেক্টরি</h1>
           <p class="text-[clamp(1rem,0.9273rem+0.2909vw,1.2rem)]">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</p>
@@ -45,7 +45,7 @@
       </div>
 
       <div class="bg-[#f5fff6] py-10">
-        <div class="heroGrid max-w-[1900px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-5 bg-[#f5fff6]">
+        <div class="heroGrid max-w-[1700px] mx-auto grid md:grid-cols-1 gap-2  xl:grid-cols-4 xl:gap-5 bg-[#f5fff6]">
           <div class="grid-list md:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
             <div class="card bg-white p-5 flex flex-col gap-6 rounded-md shadow">
               <div class="flex justify-between items-center">
@@ -309,7 +309,7 @@
               </div>
             </div>
           </div>
-          <div class="historylist md:col-span-1 bg-white shadow rounded-md p-4">
+          <div class="historylist  md:col-span-1 bg-white shadow rounded-md p-4 w-full">
             <div>
               <div class="flex justify-between"> 
                 <div class="flex gap-3 items-center">
@@ -317,10 +317,10 @@
                   <h2 class="font-semibold">Call History</h2>
 
                 </div>
-                <button class="callbtn  bg-[#00a63e] text-white text-center px-6 py-1  rounded-full font-bold hover:bg-[#19c558fb]">Clear</button>
+                <button class="clearbtn bg-[#00a63e] text-white text-center px-6 py-1  rounded-full font-bold hover:bg-[#19c558fb]">Clear</button>
               </div>
-              <div>
-
+              <div id="history-container">
+  
               </div>
             </div>
 
